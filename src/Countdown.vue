@@ -1,5 +1,5 @@
 <template>
-    <ul v-if="seconds" class="vuejs-countdown">
+    <ul v-if="diff > 0" class="vuejs-countdown">
         <li v-if="days > 0">
             <p class="digit">{{ days | twoDigits }}</p>
             <p class="text">{{ days > 1 ? 'days' : 'day' }}</p>
